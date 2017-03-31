@@ -7,13 +7,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class MovieRepositoryTest {
 
 	@Test
-	@Ignore
 	public void testGetMoviesWithCondition() {
 
 		List<Movie> movies = new ArrayList<>();

@@ -46,6 +46,9 @@ public class Console {
         // add footer lines
         out.print("You owed " + rentalRecord.getTotalAmount() + "\n");
         out.print("You earned " + rentalRecord.getFrequentRenterPoints() + " frequent renter points\n");
+        
+        //TODO Exercise 2
+        //Add recommendation line
     }
 
     public void printRentalRecord(RentalRecord rentalRecord) {

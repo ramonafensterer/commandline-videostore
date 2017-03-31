@@ -33,7 +33,7 @@ public class Console {
 
     public void printMovies(Collection<Movie> allMovies) {
         for (Movie movie : allMovies) {
-            out.print(movie.getKey() + ": " + movie.getName() + "\n");
+            out.print(movie.getKey() + ": " + movie.getName() + " (" + movie.getYear() + ")\n");
         }
     }
 
@@ -49,9 +49,9 @@ public class Console {
     }
 
     public void printRentalRecord(RentalRecord rentalRecord) {
-        out.print("cl_videostore.Rental Record for " + rentalRecord.getCustomerName() + "\n");
+        out.print("Rental Record for " + rentalRecord.getCustomerName() + "\n");
         for (Rental rental : rentalRecord.getRentals()) {
-            out.print("\t" + rental.getMovieName() + "\t" + rental.getAmount() + "\n");
+            out.print("\t" + rental.getMovieName() + " (" + rental.getMovieYear() + ")" + "\t" + rental.getAmount() + "\n");
         }
     }
 }

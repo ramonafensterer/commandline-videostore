@@ -18,4 +18,8 @@ public abstract class Rental {
     public String getMovieName() {
         return movie.getName();
     }
+
+	public int getMovieYear() {
+		return movie.getYear();
+	}
 }

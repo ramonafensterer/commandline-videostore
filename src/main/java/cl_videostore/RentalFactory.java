@@ -18,8 +18,8 @@ public class RentalFactory {
                 return new RegularRental(movie, daysRented);
             case "NEW_RELEASE":
                 return new NewReleaseRental(movie, daysRented);
-            case "CHILDRENS":
-                return new ChildrensRental(movie, daysRented);
+            case "CHILDREN":
+                return new ChildrenRental(movie, daysRented);
         }
 
         throw new RuntimeException("Unknown rental category: " + movie.getCategory());

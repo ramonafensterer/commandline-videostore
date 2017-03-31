@@ -47,7 +47,7 @@ public class MainTest {
                         "12: Up (2009)\n" +
                         "13: WALL·E (2008)\n" +
                         "Enter customer name: Choose movie by number followed by rental days, just ENTER for bill:\n" +
-                        "cl_videostore.Rental Record for John Doe\n" +
+                        "Rental Record for John Doe\n" +
                         "\tThe Shawshank Redemption (1994)\t2.0\n" +
                         "\tThe Godfather: Part II (1974)\t3.5\n" +
                         "\tThe Lord of the Rings: The Return of the King (2003)\t1.5\n" +

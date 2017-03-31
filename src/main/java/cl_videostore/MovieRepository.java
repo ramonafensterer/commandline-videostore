@@ -36,8 +36,17 @@ public class MovieRepository {
 	public Movie getByKey(int key) {
 		return movies.get(key);
 	}
-
+	
 	public List<Movie> getMoviesWithCondition(List<Movie> movies, Predicate<? super Movie> predicate) {
 		return movies.stream().filter(predicate).collect(Collectors.toList());
+	}
+
+	public List<Movie> getAllMoviesWithCondition(Predicate<? super Movie> predicate) {
+		List<Movie> movieList = getAllMoviesAsList();
+		return getMoviesWithCondition(movieList, predicate);
+	}
+
+	private List<Movie> getAllMoviesAsList() {
+		return movies.entrySet().stream().map(e -> e.getValue()).collect(Collectors.toList());
 	}
 }

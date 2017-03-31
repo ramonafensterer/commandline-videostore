@@ -25,7 +25,7 @@ public class Main {
         String customerName = console.inputCustomerName();
 
         List<Rental> rentals = console.inputRentals();
-        RentalRecord rentalRecord = new RentalRecord(rentals, customerName);
+        RentalRecord rentalRecord = new RentalRecord(movieRepository, rentals, customerName);
 
         console.printRentalRecord(rentalRecord);
         console.printFooter(rentalRecord);

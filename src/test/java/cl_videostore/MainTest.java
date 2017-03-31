@@ -55,7 +55,11 @@ public class MainTest {
                         "\tWhiplash (2014)\t6.0\n" +
                         "\tWALL·E (2008)\t4.5\n" +
                         "You owed 20.5\n" +
-                        "You earned 7 frequent renter points\n",
+                        "You earned 7 frequent renter points\n" 
+//                       TODO Uncomment this line to check your solution for exercise 2
+//                        +
+//                        "Our recommendation for you: Birdman (2014).\n"
+                        ,
                 consoleOutputStream.toString("UTF-8"));
     }
 }

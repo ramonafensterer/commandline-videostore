@@ -29,6 +29,9 @@ public class Main {
 
         console.printRentalRecord(rentalRecord);
         console.printFooter(rentalRecord);
+        
+        // TODO Exercise 4
+        // invoicePrinter.writeInvoice("invoice.txt", rentalRecord);
     }
 
 }

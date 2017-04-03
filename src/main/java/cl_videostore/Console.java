@@ -62,10 +62,6 @@ public class Console {
 	public void printRentalRecord(RentalRecord rentalRecord) {
 		out.print("Rental Record for " + rentalRecord.getCustomerName() + "\n");
 
-		// TODO Exercise 3 Refactor this loop
-		for (Rental rental : rentalRecord.getRentals()) {
-			out.print("\t" + rental.getMovieName() + " (" + rental.getMovieYear() + ")" + "\t" + rental.getAmount()
-					+ "\n");
-		}
+		rentalRecord.getRentals().forEach(out::print);
 	}
 }

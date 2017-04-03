@@ -22,4 +22,9 @@ public abstract class Rental {
 	public int getMovieYear() {
 		return movie.getYear();
 	}
+	
+	@Override
+	public String toString() {
+		return "\t" +  getMovieName() + " (" + getMovieYear() + ")" + "\t" + getAmount() + "\n";
+	}
 }

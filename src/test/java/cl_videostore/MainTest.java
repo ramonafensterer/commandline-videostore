@@ -6,6 +6,9 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -97,4 +100,24 @@ public class MainTest {
                         "Our recommendation for you: The Good, the Bad and the Ugly (1966).\n",
                 consoleOutputStream.toString("UTF-8"));
     }
+    
+    //TODO Activate test for exercise 4
+   // @Test
+//	public void testQuoteLine() throws Exception {
+//		final String consoleInput = "John Doe\n" + "0 1\n" + "1 1\n" + "\n";
+//		final ByteArrayOutputStream consoleOutputStream = new ByteArrayOutputStream();
+//
+//		new Main(new ByteArrayInputStream(consoleInput.getBytes(StandardCharsets.UTF_8)),
+//				new PrintStream(consoleOutputStream)).run();
+//
+//		String fileContent = new String(Files.readAllBytes(Paths.get("invoice.txt")));
+//		
+//		int lastIndexOfNewLine = fileContent.lastIndexOf("\n\n");
+//		
+//		String quoteInFile = fileContent.substring(lastIndexOfNewLine + 2, fileContent.length() - 1);
+//		
+//		QuotesRepository quotesRepo = new QuotesRepository();
+//		List<String> allQuotes = quotesRepo.getAllQuotes();
+//		assertTrue(allQuotes.contains(quoteInFile));
+//	}
 }
